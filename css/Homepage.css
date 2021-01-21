@@ -1,0 +1,104 @@
+/* General layout*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+#Home {
+	font-size: large;
+	text-align: center;
+	background-size: 350% 350%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+	font-weight: 500;
+}
+#Home h1 {
+	padding-top: 10vh;
+	padding-bottom: 3vh;
+}
+#Home p {
+	font-size: 1.5em;
+}
+#FirstBackground {
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#AboutMe {
+	min-height: 100vh;
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	text-align: center;
+	padding-bottom: 1%;
+}
+#AboutMe h1 {
+	padding-top: 1.5%;
+	padding-bottom: 2%;
+	font-size: 300%;
+	text-decoration: underline;
+}
+#AboutMe #Title {
+	padding-bottom: 1%;
+	font-size: 200%;
+	text-decoration: underline;
+}
+#AboutMe p {
+	font-size: 150%;
+}
+#AboutMe ul li{
+	font-size: 125%;
+}
+
+.MorningGradient{
+	background: linear-gradient(-45deg, #344b52 ,#587983, #9db3b4,#cfd3ca);
+}
+
+.DayGradient{
+	background: linear-gradient(-45deg, #c5ec44, #b2f574, #d2fa51e8,#89ec2cb7);
+}
+
+.EveningGradient{
+	background: linear-gradient(-45deg, #e48a78a3 ,#ee9ebaa2, #74e8f5bc,#4ad6e682);
+}
+
+@media (max-width: 600px){
+	/* Adjust Text for smaller screens*/
+	#AboutMe p {
+		font-size: 125%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
