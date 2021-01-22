@@ -17,7 +17,7 @@ window.onload = function () {
         /* Evening Time */
         document.getElementById("Home").classList.add('EveningGradient');
         document.getElementById("AboutMe").classList.add('EveningGradient');
-        document.getElementById('FirstBackground').style.backgroundImage = 'url(../images/Wallpaper/Wallpaper1.jpg)';
+        document.getElementById('FirstBackground').style.backgroundImage = 'url(images/Wallpaper/Wallpaper1.jpg)';
         console.log('Evening Theme');
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
@@ -27,7 +27,7 @@ window.onload = function () {
         /* Morning Time */
         document.getElementById("Home").classList.add('MorningGradient');
         document.getElementById("AboutMe").classList.add('MorningGradient');
-        document.getElementById('FirstBackground').style.backgroundImage = 'url(../images/Wallpaper/MorningWallpaper2.jpg)';
+        document.getElementById('FirstBackground').style.backgroundImage = 'url(images/Wallpaper/MorningWallpaper2.jpg)';
         console.log('Morning Theme');
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
@@ -37,7 +37,7 @@ window.onload = function () {
         /* Day Time */
         document.getElementById("Home").classList.add('DayGradient');
         document.getElementById("AboutMe").classList.add('DayGradient');
-        document.getElementById('FirstBackground').style.backgroundImage = 'url(../images/Wallpaper/CafeWallpaper2.jpg)';
+        document.getElementById('FirstBackground').style.backgroundImage = 'url(images/Wallpaper/CafeWallpaper2.jpg)';
         console.log('Day Theme');
 
         typeWriter(window.location.toString().includes('index_DE.html') ?
