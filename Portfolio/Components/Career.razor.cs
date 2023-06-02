@@ -1,5 +1,5 @@
 ﻿namespace Portfolio.Components;
 
-public partial class CareerTimeline
+public partial class Career
 {
 }
