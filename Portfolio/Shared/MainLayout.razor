@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider IsDarkMode="@IsDarkMode" />
+<MudThemeProvider IsDarkMode="true" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -11,26 +11,8 @@
         <MudLink Target="_blank" Href="https://www.github.com/AlmightyLks/" Class="mr-2">
             <MudIcon Icon="@Icons.Custom.Brands.GitHub" Title="GitHub" />
         </MudLink>
-        <MudIconButton @onclick="ToggleDarkMode" Color="Color.Inherit" Icon="@ModeIcon" />
     </MudAppBar>
     <MudMainContent Class="align-center justify-center mud-width-full">
         @Body
     </MudMainContent>
 </MudLayout>
-
-@code {
-    public string ModeIcon => IsDarkMode ? Icons.Material.Filled.DarkMode : Icons.Material.Filled.LightMode;
-
-    public bool IsDarkMode { get; set; } = true;
-
-    public void ToggleDarkMode()
-        => IsDarkMode = !IsDarkMode;
-}
-
-<style>
-    #outer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>

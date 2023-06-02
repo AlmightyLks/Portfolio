@@ -1,0 +1,47 @@
+﻿@using Portfolio.Models;
+<MudText Typo="Typo.h4" Style="text-align: center">Kompetenzen</MudText>
+
+<MudTable Class="mt-12"
+          Items="@Competences"
+          Bordered="true"
+          Filter="Filter"
+          Virtualize="true">
+
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Competence</MudText>
+        <MudSpacer />
+        <MudRating @bind-SelectedValue="@RatingFilter" Color="@RatingFilterColour" HoveredValueChanged="RatingFilterHover" Class="mt-3 mr-5" />
+        <MudSelect T="string" Label="Category" @bind-Value="CategoryFilter" Class="mt-0">
+            <MudSelectItem T="string" Value="null">Clear</MudSelectItem>
+            @foreach (var category in Competences.Select(x => x.Category).Distinct())
+            {
+                <MudSelectItem Value="@category" />
+            }
+        </MudSelect>
+        <MudTextField @bind-Value="SearchInput" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+
+    <HeaderContent>
+        <MudTh>Category</MudTh>
+        <MudTh>Title</MudTh>
+        <MudTh>More Info</MudTh>
+        <MudTh>
+            <MudTableSortLabel SortBy="new Func<CompetenceModel, object>(x => x.Rating)">
+                Skill
+            </MudTableSortLabel>
+        </MudTh>
+    </HeaderContent>
+    <GroupHeaderTemplate>
+        <MudTh Class="mud-table-cell-custom-group" colspan="5">@($"{context.GroupName}: {context.Key}")</MudTh>
+        </GroupHeaderTemplate>
+
+        <RowTemplate>
+            <MudTd DataLabel="Category">@context.Category</MudTd>
+            <MudTd DataLabel="Title">@context.Title</MudTd>
+            <MudTd DataLabel="More Info">@context.MoreInfo</MudTd>
+            <MudTd DataLabel="Skill">
+                <MudRating ReadOnly="true" Color="DetermineColour(context)" SelectedValue="@context.Rating" />
+            </MudTd>
+        </RowTemplate>
+
+    </MudTable>
