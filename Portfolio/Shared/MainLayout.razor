@@ -8,12 +8,12 @@
     <MudAppBar>
         <MudText>AlmightyLks</MudText>
         <MudSpacer />
-        <MudLink Target="_blank" Href="https://www.github.com/AlmightyLks/">
+        <MudLink Target="_blank" Href="https://www.github.com/AlmightyLks/" Class="mr-2">
             <MudIcon Icon="@Icons.Custom.Brands.GitHub" Title="GitHub" />
         </MudLink>
         <MudIconButton @onclick="ToggleDarkMode" Color="Color.Inherit" Icon="@ModeIcon" />
     </MudAppBar>
-    <MudMainContent Class="d-flex align-center justify-center mud-width-full">
+    <MudMainContent Class="align-center justify-center mud-width-full">
         @Body
     </MudMainContent>
 </MudLayout>
