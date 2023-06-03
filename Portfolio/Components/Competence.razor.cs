@@ -20,7 +20,7 @@ public partial class Competence
 
     protected override async Task OnInitializedAsync()
     {
-        Competences = await Client.GetFromJsonAsync<CompetenceModel[]>("/static/competences.json") ?? Array.Empty<CompetenceModel>();
+        Competences = await Client.GetFromJsonAsync<CompetenceModel[]>("static/competences.json") ?? Array.Empty<CompetenceModel>();
         Competences = Competences.OrderByDescending(x => x.Rating).ThenByDescending(x => x.Category).ToArray();
     }
     private bool Filter(CompetenceModel element)
