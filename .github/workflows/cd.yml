@@ -6,6 +6,7 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     name: Deploy to gh-pages
+    needs: job1
     
     steps:
     - uses: actions/checkout@v3
