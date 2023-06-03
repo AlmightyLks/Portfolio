@@ -20,7 +20,6 @@ jobs:
     - name: Publish
       run: dotnet publish -c Release -o release
     - name: Push to gh-pages branch
-    - name: copy
       env:
         SRC_FOLDER_PATH: 'release\wwwroot'
         TARGET_BRANCH: 'gh-pages'
