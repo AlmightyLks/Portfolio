@@ -1,14 +1,12 @@
-name: Deploy to gh-pages
-
 on:
   push:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  job2:
     runs-on: ubuntu-latest
-
+    name: Deploy to gh-pages
+    
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
