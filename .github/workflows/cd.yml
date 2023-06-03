@@ -34,7 +34,7 @@ jobs:
       run: dotnet publish -c Release -o release
     - name: Push to gh-pages branch
       env:
-        SRC_FOLDER_PATH: 'release\wwwroot'
+        SRC_FOLDER_PATH: 'Portfolio\release\wwwroot'
         TARGET_BRANCH: 'gh-pages'
       run: |
         files=$(find $SRC_FOLDER_PATH -type f) # get the file list
