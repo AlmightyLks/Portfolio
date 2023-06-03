@@ -38,5 +38,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.PAT_TOKEN }}
         BASE_BRANCH: main # The branch the action should deploy from.
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: Portfolio/release/wwwroot # The folder the action should deploy.
+        FOLDER: release/wwwroot # The folder the action should deploy.
         SINGLE_COMMIT: true
