@@ -1,0 +1,97 @@
+﻿[
+  {
+    "Title": "C# / .NET",
+    "Category": "Backend",
+    "Rating": 5
+  },
+  {
+    "Title": "Object Oriented Programming (OOP)",
+    "Category": "Backend",
+    "Rating": 5
+  },
+  {
+    "Title": "C# Micro-Optimization",
+    "Category": "Backend",
+    "Rating": 2
+  },
+  {
+    "Title": "Web",
+    "Category": "Backend",
+    "MoreInfo": "All around how Web 1 & 2 works",
+    "Rating": 4
+  },
+  {
+    "Title": "ASP.NET Core",
+    "Category": "Backend",
+    "Rating": 4
+  },
+  {
+    "Title": "RESTful Web API",
+    "Category": "Backend",
+    "Rating": 3
+  },
+  {
+    "Title": "Entity Framework Core (EF Core)",
+    "Category": "Backend",
+    "Rating": 3
+  },
+  {
+    "Title": "Dapper",
+    "Category": "Backend",
+    "Rating": 2
+  },
+  {
+    "Title": "ADO.NET",
+    "Category": "Backend",
+    "Rating": 2
+  },
+  {
+    "Title": "MVC / Razor",
+    "Category": "Frontend",
+    "Rating": 2
+  },
+  {
+    "Title": "Blazor WASM / Server",
+    "Category": "Frontend",
+    "Rating": 4
+  },
+  {
+    "Title": "HTML & CSS",
+    "Category": "Frontend",
+    "Rating": 1
+  },
+  {
+    "Title": "JavaScript",
+    "Category": "Frontend",
+    "Rating": 4
+  },
+  {
+    "Title": "SQL",
+    "Category": "Databases",
+    "MoreInfo": "Familiar with MySQL, SQLite and SQL Server",
+    "Rating": 3
+  },
+  {
+    "Title": "SQL & Database Optimization",
+    "Category": "Databases",
+    "MoreInfo": "Recently started looking into SQL and Database optimization",
+    "Rating": 1
+  },
+  {
+    "Title": "Microservices / Monoliths",
+    "Category": "Backend",
+    "Rating": 4
+  },
+  {
+    "Title": "Azure CI/CD",
+    "Category": "DevOps",
+    "MoreInfo": "Need more practice with ARM & Biceps Templates",
+    "Rating": 3
+  },
+  {
+    "Title": "Azure Portal",
+    "Category": "DevOps",
+    "MoreInfo": "Monitoring and Troubleshooting of Services & Resources",
+    "Rating": 2
+  }
+]
