@@ -1,11 +1,15 @@
 ﻿<MudText Typo="Typo.h4" Style="text-align: center">Karriere</MudText>
 
-<MudTimeline Class="mt-12">
+<MudTimeline Class="mt-12" TimelinePosition="@TimelinePosition">
     <MudTimelineItem Color="Color.Primary" Size="Size.Small">
         <ItemOpposite>
             <MudText Color="Color.Primary" Typo="Typo.h5">Bis August, 2018</MudText>
         </ItemOpposite>
         <ItemContent>
+            @if (IsMobile)
+            {
+                <MudText Class="mb-5" Color="Color.Primary" Typo="Typo.h5">Bis August, 2018</MudText>
+            }
             <MudCard Outlined="true" Elevation="25">
                 <MudCardContent>
                     <MudText Color="Color.Primary" Typo="Typo.h6" GutterBottom="true">Realschule</MudText>
@@ -20,10 +24,14 @@
             <MudText Color="Color.Secondary" Typo="Typo.h5">Bis August, 2021</MudText>
         </ItemOpposite>
         <ItemContent>
+            @if (IsMobile)
+            {
+                <MudText Class="mb-5" Color="Color.Secondary" Typo="Typo.h5">Bis August, 2021</MudText>
+            }
             <MudCard Outlined="true" Elevation="25">
                 <MudCardContent>
                     <MudText Color="Color.Secondary" Typo="Typo.h6" GutterBottom="true">Duale Ausbildung, ITA + FHSR</MudText>
-                    <MudText>Absolvieren einer schulische Ausbildung zum <MudLink Color="Color.Secondary" Underline="Underline.Hover" Href="https://de.wikipedia.org/wiki/Informationstechnischer_Assistent">staatlich geprüften IT-Assistenten</MudLink>, sowie das zeitgleiche Fachabitur in Informatik</MudText>
+                    <MudText>Absolvieren einer schulische Ausbildung zum <MudLink Color="Color.Secondary" Underline="Underline.Hover" Href="https://de.wikipedia.org/wiki/Informationstechnischer_Assistent">staatlich geprüften IT-Assistenten</MudLink>, sowie die zeitgleiche Fachhochschulreife in Informatik</MudText>
                 </MudCardContent>
             </MudCard>
         </ItemContent>
@@ -34,6 +42,10 @@
             <MudText Color="Color.Info" Typo="Typo.h5">Bis August, 2023</MudText>
         </ItemOpposite>
         <ItemContent>
+            @if (IsMobile)
+            {
+                <MudText Class="mb-5" Color="Color.Info" Typo="Typo.h5">Bis August, 2023</MudText>
+            }
             <MudCard Outlined="true" Elevation="25">
                 <MudCardContent>
                     <MudText Color="Color.Info" Typo="Typo.h6" GutterBottom="true">Ausbildung FIAE</MudText>
@@ -42,12 +54,16 @@
             </MudCard>
         </ItemContent>
     </MudTimelineItem>
-    
+
     <MudTimelineItem Color="Color.Success" Size="Size.Large" Variant="Variant.Outlined" Elevation="25">
         <ItemOpposite>
             <MudText Color="Color.Success" Typo="Typo.h5">Seit August, 2023</MudText>
         </ItemOpposite>
         <ItemContent>
+            @if (IsMobile)
+            {
+                <MudText Class="mb-5" Color="Color.Success" Typo="Typo.h5">Seit August, 2023</MudText>
+            }
             <MudCard Outlined="true" Elevation="25">
                 <MudCardContent>
                     <MudText Color="Color.Success" Typo="Typo.h6" GutterBottom="true">Senior Cloud Engineer</MudText>

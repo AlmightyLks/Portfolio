@@ -1,21 +1,25 @@
 ﻿<MudText Typo="Typo.h4" Style="text-align: center">Über mich</MudText>
 
-<MudContainer Class="mt-12 d-flex">
-    <MudContainer>
+<MudGrid Class="mt-12">
+    <MudItem xs="12" sm="6">
         <MudImage Fluid="true" Src="https://github.com/AlmightyLks.png" Alt="AlmightyLks" Elevation="25" Class="rounded-lg" />
-    </MudContainer>
+    </MudItem>
 
-    <MudContainer>
-        <MudList>
+    <MudItem xs="12" sm="6">
+        <MudText Typo="Typo.h4">
+            Kleiner Rundown
+        </MudText>
+
+        <MudList DisableGutters="true" Dense="true">
             <MudListItem>
-                <MudText Style="font-size: large">Mein Name ist Lukas</MudText>
+                <MudText Style="font-size: large">- Mein Name ist Lukas</MudText>
             </MudListItem>
             <MudListItem>
-                <MudText Style="font-size: large">Programmiere seit 2018</MudText>
+                <MudText Style="font-size: large">- Programmiere seit 2018</MudText>
             </MudListItem>
             <MudListItem>
-                <MudText Style="font-size: large">All Things C# / .NET & Cloud</MudText>
+                <MudText Style="font-size: large">- All Things C# / .NET & Cloud</MudText>
             </MudListItem>
         </MudList>
-    </MudContainer>
-</MudContainer>
+    </MudItem>
+</MudGrid>
